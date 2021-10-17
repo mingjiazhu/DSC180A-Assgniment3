@@ -25,16 +25,16 @@ RUN apt-get -y install aria2
     apt-get -y install nmap
     apt-get -y install traceroute
 
+RUN conda install --yes geopandas babypandas
+
 # 3) install packages
-USER jovyan
-
-RUN RUN conda install --yes geopandas babypandas
+# USER jovyan
    
-RUN pip install --no-cache-dir networkx scipy
+# RUN pip install --no-cache-dir networkx scipy
 
-# 4) change back to notebook user
-COPY /run_jupyter.sh /
-RUN chmod 755 /run_jupyter.sh
+# # 4) change back to notebook user
+# COPY /run_jupyter.sh /
+# RUN chmod 755 /run_jupyter.sh
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]

@@ -28,9 +28,8 @@ RUN apt-get -y install aria2
 # 3) install packages
 USER jovyan
 
-RUN pip install -y geopandas
-    pip install -y babypandas
-
+RUN RUN conda install --yes geopandas babypandas
+   
 RUN pip install --no-cache-dir networkx scipy
 
 # 4) change back to notebook user

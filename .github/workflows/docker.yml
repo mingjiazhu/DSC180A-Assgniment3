@@ -1,4 +1,4 @@
-name: Docker Workflow
+name: Docker Github Action
 
 on:
   push:

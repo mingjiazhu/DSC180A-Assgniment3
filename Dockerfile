@@ -14,7 +14,7 @@ ARG BASE_CONTAINER=ucsdets/datascience-notebook:2020.2-stable
 
 FROM $BASE_CONTAINER
 
-LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
+LABEL maintainer="Mingjia Zhu <mzhu@ucsd.edu>"
 
 # 2) change to root to install packages
 USER root
